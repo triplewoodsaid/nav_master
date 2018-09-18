@@ -28,7 +28,7 @@ body{background: #ddd url("img/wallhaven.jpg") no-repeat center center;backgroun
     transition: box-shadow 0.1s;
 }
 
-#main > div > kbd:hover > button{display: inline-block;}
+#main > div > kbd:active > button{display: inline-block;}
 
 #main > div > #delete{font-size: 16px;width: 114px;text-transform: lowercase;}
 
@@ -68,6 +68,7 @@ input:focus{
     outline: none;
 }
 #search > button{
+    border: 1px solid #222; 
     display: inline-block;
     width: 100px;
     height: 40px;
@@ -77,11 +78,20 @@ input:focus{
     font-family: "Microsoft YaHei", "微软雅黑", serif;
     text-decoration: none;
     border-radius: 8px;
-    background: #050505;
+    background: #000;box-shadow: 0 0 0 1px #161718,
+     0 0 0 2px #1b1c1d, 0 2px 0 2px #080808;
+ 
+}
+#search > button:active{
+    cursor: pointer;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.1s;
 }
 #baidu{
     margin: 0 10px;
 }
-button:hover{
+/* button:hover{
     cursor: pointer;
-} 
+}  */

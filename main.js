@@ -52,7 +52,6 @@ function createSearchBar(){ // 函数创建搜索bar
     
     let fragment = document.createDocumentFragment();
     fragment.appendChild(div);
-    console.log(1234);
     div.appendChild(input);
     div.appendChild(baidu);
     div.appendChild(google);
