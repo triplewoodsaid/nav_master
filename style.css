@@ -28,7 +28,7 @@ body{background: #ddd url("img/wallhaven.jpg") no-repeat center center;backgroun
     transition: box-shadow 0.1s;
 }
 
-#main > div > kbd:active > button{display: inline-block;}
+#main > div > kbd:hover > button{display: inline-block;}
 
 #main > div > #delete{font-size: 16px;width: 114px;text-transform: lowercase;}
 
